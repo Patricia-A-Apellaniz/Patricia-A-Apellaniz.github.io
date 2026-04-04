@@ -1,0 +1,51 @@
+{% include base_path %}
+{% assign pub = include.post %}
+{% assign year = pub.date | date: "%Y" %}
+{% assign type = pub.pub_type | default: "other" %}
+
+{% if pub.paperurl and pub.paperurl != "" %}
+  {% if pub.paperurl contains "://" %}
+    {% assign pdf_href = pub.paperurl %}
+  {% else %}
+    {% assign pdf_href = base_path | append: pub.paperurl %}
+  {% endif %}
+{% endif %}
+
+<article class="pub-featured-mini">
+  <div class="pub-featured-mini__top">
+    <span class="pub-badge pub-badge--{{ type | downcase }}">{{ type | capitalize }}</span>
+    <span class="pub-featured-mini__year">{{ year }}</span>
+  </div>
+
+  <h3 class="pub-featured-mini__title">
+    <a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
+  </h3>
+
+  {% if pub.venue %}
+    <p class="pub-featured-mini__venue">{{ pub.venue }}</p>
+  {% endif %}
+
+    <div class="pub-featured-mini__actions">
+      {% if pub.paperurl and pub.paperurl != "" %}
+        <a class="pub-link pub-link--icon pub-link--primary"
+           href="{{ pdf_href }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open PDF"
+           title="PDF">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+
+      {% if pub.link and pub.link != "" %}
+        <a class="pub-link pub-link--icon"
+           href="{{ pub.link }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open link"
+           title="Link">
+          <i class="fas fa-link" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+    </div>
+</article>

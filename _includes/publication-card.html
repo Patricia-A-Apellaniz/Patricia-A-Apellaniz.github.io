@@ -1,0 +1,85 @@
+{% include base_path %}
+
+{% assign pub = include.post %}
+{% assign year = pub.date | date: "%Y" %}
+{% assign type = pub.pub_type | default: "other" %}
+{% assign authors = pub.authors | default: pub.citation | default: "" %}
+
+{% assign authors_markup = authors
+  | replace: "Patricia A. Apellániz", "<strong>Patricia A. Apellániz</strong>"
+  | replace: "P. A. Apellániz", "<strong>P. A. Apellániz</strong>"
+%}
+
+{% capture searchable %}
+{{ pub.title }} {{ authors }} {{ pub.venue }} {{ pub.citation }} {{ pub.topics | join: " " }}
+{% endcapture %}
+
+{% if pub.paperurl and pub.paperurl != "" %}
+  {% if pub.paperurl contains "://" %}
+    {% assign pdf_href = pub.paperurl %}
+  {% else %}
+    {% assign pdf_href = base_path | append: pub.paperurl %}
+  {% endif %}
+{% endif %}
+
+<article
+  class="pub-card {% if include.featured %}pub-card--featured{% endif %}"
+  data-type="{{ type | downcase }}"
+  data-year="{{ year }}"
+  data-search="{{ searchable | strip_html | strip_newlines | downcase | escape }}"
+>
+  <div class="pub-card__top">
+    <span class="pub-badge pub-badge--{{ type | downcase }}">{{ type | capitalize }}</span>
+    <span class="pub-card__year">{{ year }}</span>
+  </div>
+
+  <h3 class="pub-card__title">
+    <a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
+  </h3>
+
+  {% if authors != "" %}
+    <p class="pub-card__authors">{{ authors_markup }}</p>
+  {% endif %}
+
+  {% if pub.venue %}
+    <p class="pub-card__venue">{{ pub.venue }}</p>
+  {% endif %}
+
+  {% if pub.topics %}
+    <div class="pub-card__topics">
+      {% for topic in pub.topics %}
+        <span class="pub-chip">{{ topic }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="pub-card__actions">
+    {% if pub.paperurl and pub.paperurl != "" %}
+      <a class="pub-btn" href="{{ pdf_href }}" target="_blank" rel="noopener noreferrer">PDF</a>
+    {% endif %}
+
+    {% if pub.link and pub.link != "" %}
+      <a class="pub-btn pub-btn--secondary" href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">Link</a>
+    {% endif %}
+
+    {% if pub.github and pub.github != "" %}
+      <a class="pub-btn pub-btn--secondary" href="{{ pub.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+    {% endif %}
+
+    {% if pub.code and pub.code != "" %}
+      <a class="pub-btn pub-btn--secondary" href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">Code</a>
+    {% endif %}
+
+    {% if pub.content and pub.content != "" %}
+      <button class="pub-btn pub-btn--ghost js-abstract-toggle" type="button" aria-expanded="false">
+        Abstract
+      </button>
+    {% endif %}
+  </div>
+
+  {% if pub.content and pub.content != "" %}
+    <div class="pub-card__abstract" hidden>
+      {{ pub.content | markdownify }}
+    </div>
+  {% endif %}
+</article>
