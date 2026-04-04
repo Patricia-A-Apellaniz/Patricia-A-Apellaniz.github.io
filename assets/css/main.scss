@@ -38,4 +38,154 @@
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
+
+@import "publications-library";
+@import "about-home";
+@import "cv-page";
+@import "projects-page";
+
 @import "print";
+
+.masthead__menu-item a.active {
+  font-weight: 700;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.15rem;
+}
+
+.masthead__menu .greedy-nav {
+  display: flex;
+  align-items: center;
+  min-height: $masthead-height;
+  background: transparent;
+}
+
+.masthead__menu .greedy-nav a {
+  margin: 0;
+  padding: 0.55rem 0.85rem;
+  border-radius: 12px;
+  font-size: 0.98rem;
+  line-height: 1.2;
+  color: #5d6470;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.masthead__menu .greedy-nav a:hover {
+  color: #111827;
+  background: rgba(86, 160, 199, 0.08);
+}
+
+.masthead__menu .greedy-nav .visible-links {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.masthead__menu .greedy-nav .visible-links li {
+  display: flex;
+  align-items: center;
+}
+
+.masthead__menu .greedy-nav .visible-links a::before {
+  display: none;
+}
+
+.masthead__menu-item--lg a {
+  padding: 0.3rem 0.15rem 0.35rem 0;
+  border-radius: 0;
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #4b5563;
+}
+
+.masthead__menu-item--lg a:hover {
+  background: transparent;
+  color: #111827;
+}
+
+.masthead__menu-item a.active {
+  font-weight: 700;
+  color: #111827;
+  background: rgba(86, 160, 199, 0.10);
+  border-bottom: none;
+  box-shadow: inset 0 -2px 0 rgba(86, 160, 199, 0.9);
+  padding-bottom: 0.55rem;
+}
+
+@media screen and (max-width: 768px) {
+  .masthead__inner-wrap {
+    padding: 0 1rem;
+  }
+
+  .masthead__menu-item--lg {
+    margin-right: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .masthead__menu .greedy-nav a {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.93rem;
+  }
+
+  .masthead__menu-item--lg a {
+    font-size: 0.98rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    display: grid;
+    grid-template-columns: 308px minmax(0, 1fr);
+    column-gap: 2rem;
+    align-items: start;
+    margin-top: 1.1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  #main > .sidebar {
+    grid-column: 1;
+    float: none;
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: calc(#{$masthead-height} + 1rem);
+    padding-top: 0;
+    align-self: start;
+  }
+
+  #main > .page,
+  #main > .archive {
+    grid-column: 2;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .page,
+  .archive {
+    width: 100%;
+  }
+
+  .page__inner-wrap {
+    margin-top: 0;
+  }
+
+  .page__inner-wrap > header {
+    margin-top: 0;
+  }
+
+  .page__title {
+    margin-top: 0;
+  }
+
+  .author__bio p {
+    max-width: none;
+  }
+}

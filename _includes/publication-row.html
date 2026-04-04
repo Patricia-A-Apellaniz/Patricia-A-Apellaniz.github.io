@@ -1,0 +1,120 @@
+{% include base_path %}
+
+{% assign pub = include.post %}
+{% assign year = pub.date | date: "%Y" %}
+{% assign type = pub.pub_type | default: "other" %}
+{% assign authors = pub.authors | default: pub.citation | default: "" %}
+
+{% assign authors_markup = authors
+| replace: "Patricia A. Apellániz", "<strong>Patricia A. Apellániz</strong>"
+| replace: "P. A. Apellániz", "<strong>P. A. Apellániz</strong>"
+%}
+
+{% capture searchable %}
+{{ pub.title }} {{ authors }} {{ pub.venue }} {{ pub.citation }} {{ pub.topics | join: " " }}
+{% endcapture %}
+
+{% if pub.paperurl and pub.paperurl != "" %}
+{% if pub.paperurl contains "://" %}
+{% assign pdf_href = pub.paperurl %}
+{% else %}
+{% assign pdf_href = base_path | append: pub.paperurl %}
+{% endif %}
+{% endif %}
+
+<article
+        class="pub-row pub-item"
+        data-type="{{ type | downcase }}"
+        data-year="{{ year }}"
+        data-topics="{{ pub.topics | join: '|' | downcase }}"
+        data-search="{{ searchable | strip_html | strip_newlines | downcase | escape }}"
+>
+    <div class="pub-row__meta">
+        <span class="pub-badge pub-badge--{{ type | downcase }}">{{ type | capitalize }}</span>
+        <span class="pub-row__year">{{ year }}</span>
+    </div>
+
+    <div class="pub-row__main">
+        <h3 class="pub-row__title">
+            <a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
+        </h3>
+
+        {% if authors != "" %}
+        <p class="pub-row__authors">{{ authors_markup }}</p>
+        {% endif %}
+
+        {% if pub.venue %}
+        <p class="pub-row__venue">{{ pub.venue }}</p>
+        {% endif %}
+
+        {% if pub.topics %}
+        <div class="pub-row__topics">
+            {% for topic in pub.topics %}
+            <span class="pub-chip">{{ topic }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="pub-row__actions">
+        {% if pub.paperurl and pub.paperurl != "" %}
+        <a class="pub-link pub-link--icon pub-link--primary"
+           href="{{ pdf_href }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open PDF"
+           title="PDF">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+
+        {% if pub.link and pub.link != "" %}
+        <a class="pub-link pub-link--icon"
+           href="{{ pub.link }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open link"
+           title="Link">
+            <i class="fas fa-link" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+
+        {% if pub.github and pub.github != "" %}
+        <a class="pub-link pub-link--icon"
+           href="{{ pub.github }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open GitHub"
+           title="GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+
+        {% if pub.code and pub.code != "" %}
+        <a class="pub-link pub-link--icon"
+           href="{{ pub.code }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Open code"
+           title="Code">
+            <i class="fas fa-code" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+
+        {% if pub.content and pub.content != "" %}
+        <button class="pub-link pub-link--icon pub-link--button js-abstract-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Show abstract"
+                title="Abstract">
+            <i class="fas fa-align-left" aria-hidden="true"></i>
+        </button>
+        {% endif %}
+    </div>
+
+    {% if pub.content and pub.content != "" %}
+    <div class="pub-row__abstract" hidden>
+        {{ pub.content | markdownify }}
+    </div>
+    {% endif %}
+</article>

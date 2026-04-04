@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="42" fill="#f3f6fb"/>
+  <rect x="36" y="36" width="1128" height="688" rx="34" fill="white" stroke="#E7EDF4" stroke-width="2"/>
+  <circle cx="987" cy="136" r="190" fill="#6b7280" fill-opacity="0.14"/>
+  <circle cx="1080" cy="620" r="220" fill="#0f172a" fill-opacity="0.06"/>
+  <rect x="92" y="92" width="220" height="42" rx="21" fill="#0f172a" fill-opacity="0.06"/>
+  <circle cx="122" cy="113" r="8" fill="#6b7280"/>
+  <text x="145" y="120" fill="#4B5563" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Research project</text>
+  <text x="92" y="240" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800">REPO4EU</text>
+  <text x="92" y="304" fill="#4B5563" font-family="Arial, Helvetica, sans-serif" font-size="34">Precision drug repurposing</text>
+  <text x="92" y="352" fill="#4B5563" font-family="Arial, Helvetica, sans-serif" font-size="34">Europe and the world</text>
+  <rect x="92" y="430" width="328" height="180" rx="26" fill="#0f172a"/>
+  <rect x="444" y="430" width="212" height="180" rx="26" fill="#6b7280" fill-opacity="0.16" stroke="#6b7280" stroke-opacity="0.35"/>
+  <rect x="680" y="430" width="176" height="180" rx="26" fill="#0f172a" fill-opacity="0.06"/>
+  <rect x="880" y="430" width="184" height="180" rx="26" fill="white" stroke="#E7EDF4" stroke-width="2"/>
+  <path d="M132 560C180 500 222 472 274 472C318 472 350 490 380 520" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M476 560L524 500L556 532L618 474" stroke="#6b7280" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M730 486H804" stroke="#D1D9E4" stroke-width="10" stroke-linecap="round"/>
+  <path d="M730 530H804" stroke="#D1D9E4" stroke-width="10" stroke-linecap="round"/>
+  <path d="M730 574H782" stroke="#D1D9E4" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="972" cy="510" r="54" fill="#6b7280" fill-opacity="0.16"/>
+  <circle cx="972" cy="510" r="26" fill="#6b7280"/>
+  <text x="92" y="666" fill="#6B7280" font-family="Arial, Helvetica, sans-serif" font-size="24">Visual placeholder for the Projects page</text>
+</svg>
