@@ -1,0 +1,162 @@
+projects:
+- title: SYNTHIA
+  category: IHI / Horizon Europe
+  years: 2024–2029
+  cover: /images/collaborations/synthia/cover.jpg
+  cover_alt: SYNTHIA cover
+  gallery:
+  - src: /images/collaborations/synthia/cover.jpg
+    alt: SYNTHIA
+  - src: /images/collaborations/synthia/meeting.jpg
+    alt: SYNTHIA consortium meeting
+  - src: /images/collaborations/synthia/workshop.jpg
+    alt: SYNTHIA workshop session
+  - src: /images/collaborations/synthia/wcd.jpg
+    alt: SYNTHIA in World Cancer Day
+  summary: Synthetic data generation framework for integrated validation of healthcare
+    use cases and AI applications.
+  logos:
+  - src: /images/collaborations/logos/logo-synthia.png
+    alt: SYNTHIA logo
+  links:
+  - label: Project website
+    url: https://www.ihi-synthia.eu/
+    primary: true
+  - label: CORDIS
+    url: https://cordis.europa.eu/project/id/101172872
+- title: REPO4EU
+  category: Horizon Europe
+  years: 2022–2029
+  cover: /images/collaborations/repo4eu/cover.jpg
+  cover_alt: REPO4EU cover
+  gallery:
+  - src: /images/collaborations/repo4eu/cover.jpg
+    alt: REPO4EU
+  summary: Precision drug repurposing for Europe and the world, connecting translational
+    research and cross-partner workflows.
+  logos:
+  - src: /images/collaborations/logos/logo-repo4eu.png
+    alt: REPO4EU logo
+  links:
+  - label: Project website
+    url: https://repo4.eu/
+    primary: true
+  - label: CORDIS
+    url: https://cordis.europa.eu/project/id/101057619
+- title: SYNTHEMA
+  category: Horizon Europe
+  years: 2022–2026
+  cover: /images/collaborations/synthema/cover.jpg
+  cover_alt: SYNTHEMA cover
+  gallery:
+  - src: /images/collaborations/synthema/cover.jpg
+    alt: SYNTHEMA
+  - src: /images/collaborations/synthema/meeting-1.jpg
+    alt: SYNTHEMA consortium meeting in San Sebastián, Spain
+  - src: /images/collaborations/synthema/meeting-2.jpg
+    alt: SYNTHEMA consortium meeting in Gant, Belgium
+  - src: /images/collaborations/synthema/presentingproject.jpg
+    alt: SYNTHEMA project presentation at UPM
+  summary: Synthetic generation of hematological data over federated computing frameworks
+    for rare-disease and clinical AI scenarios.
+  logos:
+  - src: /images/collaborations/logos/logo-synthema.png
+    alt: SYNTHEMA logo
+  links:
+  - label: Project website
+    url: https://synthema.eu/
+    primary: true
+  - label: CORDIS
+    url: https://cordis.europa.eu/project/id/101095530
+- title: GenoMed4ALL
+  category: H2020
+  years: 2021–2025
+  cover: /images/collaborations/genomed4all/cover.jpg
+  cover_alt: GenoMed4ALL cover
+  gallery:
+  - src: /images/collaborations/genomed4all/cover.jpg
+    alt: GenoMed4ALL
+  - src: /images/collaborations/genomed4all/meeting-1.jpg
+    alt: GenoMed4ALL consortium meeting
+  - src: /images/collaborations/genomed4all/webinar.jpg
+    alt: GenoMed4ALL webinar
+  - src: /images/collaborations/genomed4all/meeting-2.jpg
+    alt: GenoMed4ALL consortium meeting
+  summary: Genomics and personalized medicine through AI in haematological diseases
+    and collaborative clinical research.
+  logos:
+  - src: /images/collaborations/logos/logo-genomed4all.png
+    alt: GenoMed4ALL logo
+  links:
+  - label: Project website
+    url: https://genomed4all.eu/
+    primary: true
+  - label: CORDIS
+    url: https://cordis.europa.eu/project/id/101017549/results
+- title: AI4EU
+  category: H2020
+  years: 2019–2021
+  cover: /images/collaborations/ai4eu/cover.jpg
+  cover_alt: AI4EU cover
+  gallery:
+  - src: /images/collaborations/ai4eu/cover.jpg
+    alt: AI4EU
+  summary: A European AI on-demand platform and ecosystem focused on deployment, integration,
+    and community building.
+  logos:
+  - src: /images/collaborations/logos/logo-ai4eu.jpg
+    alt: AI4EU logo
+  links:
+  - label: Project website
+    url: https://aiod.eu/
+    primary: true
+  - label: CORDIS
+    url: https://cordis.europa.eu/project/id/825619
+research_collaborations:
+- title: Institute of Ceramics and Glass · CSIC
+  category: Institutional collaboration
+  years: 2025–present
+  cover: /images/collaborations/icv/cover.jpg
+  cover_alt: ICV-CSIC stay cover
+  gallery:
+  - src: /images/collaborations/icv/cover.jpg
+    alt: ICV-CSIC stay cover
+  - src: /images/collaborations/icv/group.jpg
+    alt: ICV-CSIC group photo
+  - src: /images/collaborations/icv/csicincorporation.jpg
+    alt: ICV-CSIC incorporation photo
+  - src: /images/collaborations/icv/event.jpg
+    alt: ICV-CSIC March 11th event
+  summary: Ongoing collaboration on AI-based battery design and diagnostics, currently
+    connected to the NEVORA project.
+  logos:
+  - src: /images/collaborations/logos/logo-icv.jpg
+    alt: ICV logo
+  - src: /images/collaborations/logos/logo-csic.png
+    alt: CSIC logo
+  links:
+  - label: NEVORA
+    url: https://www.nevoraproject.com/
+    primary: true
+  media_link: https://www.icv.csic.es/
+- title: HeaDS · University of Copenhagen
+  category: Research stay
+  years: '2023'
+  cover: /images/collaborations/heads/cover.jpg
+  cover_alt: HeaDS stay cover
+  gallery:
+  - src: /images/collaborations/heads/cover.jpg
+    alt: HeaDS stay cover
+  - src: /images/collaborations/heads/group.jpg
+    alt: HeaDS group photo
+  summary: Three-month research stay on optimization techniques for generative models,
+    within GenoMed4ALL context.
+  logos:
+  - src: /images/collaborations/logos/logo-heads.jpg
+    alt: HeaDS logo
+  - src: /images/collaborations/logos/logo-ku.png
+    alt: University of Copenhagen logo
+  links:
+  - label: HeaDS
+    url: https://heads.ku.dk/
+    primary: true
