@@ -13,15 +13,41 @@ redirect_from:
 
   <section class="cv-hero">
     <aside class="cv-hero__aside">
-      <div class="cv-hero-card">
+      <div class="cv-hero-profile">
         <span class="cv-hero-card__label">Current role</span>
-        <strong>Researcher</strong>
-        <span>ETSIT, UPM</span>
-      </div>
-      <div class="cv-hero-card">
-        <span class="cv-hero-card__label">Latest degree</span>
-        <strong>PhD in Communications Technologies and Systems</strong>
-        <span>ETSIT, UPM, 2025</span>
+        <h2>Assistant Professor</h2>
+        <p>EPS-UAM, AUDIAS. Research collaborator at GAPS-UPM.</p>
+
+        <div class="cv-hero-affiliations" aria-label="Current affiliations">
+          <a href="https://audias.ii.uam.es/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/collaborations/logos/logo-audias.png" alt="AUDIAS">
+          </a>
+          <a href="https://www.uam.es/eps/inicio" target="_blank" rel="noopener noreferrer">
+            <img src="/images/collaborations/logos/logo-uam.png" alt="UAM">
+          </a>
+          <a href="https://www.gaps.ssr.upm.es/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/collaborations/logos/logo-gaps.png" alt="GAPS">
+          </a>
+          <a class="cv-hero-affiliations__upm" href="https://www.upm.es/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/collaborations/logos/logo-politecnica.jpg" alt="Universidad Politécnica de Madrid">
+          </a>
+        </div>
+
+        <dl class="cv-hero-facts">
+          <div>
+            <dt>Research areas</dt>
+            <dd>Generative AI, survival analysis, synthetic data, federated learning</dd>
+          </div>
+          <div>
+            <dt>Latest degree</dt>
+            <dd>PhD in Communications Technologies and Systems, ETSIT-UPM, 2025</dd>
+          </div>
+        </dl>
+
+        <a class="cv-hero-download" href="{{ '/files/CV_PAA_research_eng.pdf' | prepend: base_path }}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
+          <span>Download full CV</span>
+        </a>
       </div>
     </aside>
     <div class="cv-hero__lead">
@@ -30,11 +56,6 @@ redirect_from:
           <img src="{{ '/images/cv/cv_preview.jpg' | prepend: base_path }}" alt="Preview of the CV PDF">
         </div>
       </figure>
-        <div class="cv-hero__actions">
-            <a class="cv-button cv-button--primary" href="{{ '/files/CV_PAA_research_eng.pdf' | prepend: base_path }}" target="_blank" rel="noopener noreferrer">
-              <span>Download full CV</span>
-            </a>
-        </div>
     </div>
   </section>
 
@@ -105,10 +126,21 @@ redirect_from:
       <article class="cv-item cv-item--compact cv-item--work">
         <div class="cv-item__top">
           <h3>
-            <span class="cv-item__title">Researcher</span>
-            <span class="cv-item__location">(ETSIT, UPM)</span>
+            <span class="cv-item__title">Assistant Professor (Ayudante Doctora)</span>
+            <span class="cv-item__location">(EPS, UAM)</span>
           </h3>
-          <span class="cv-item__year">2024–Now</span>
+          <span class="cv-item__year">2026-Now</span>
+        </div>
+        <p class="cv-item__detail cv-item__detail--summary">Teaching and researching in AI and machine learning within the AUDIAS group, while continuing research collaborations with GAPS at UPM</p>
+      </article>
+
+      <article class="cv-item cv-item--compact cv-item--work">
+        <div class="cv-item__top">
+          <h3>
+            <span class="cv-item__title">Researcher</span>
+            <span class="cv-item__location">(GAPS, ETSIT, UPM)</span>
+          </h3>
+          <span class="cv-item__year">2024-2026</span>
         </div>
         <p class="cv-item__detail cv-item__detail--summary">Developing generative, explainable, and federated AI methods for European healthcare projects</p>
       </article>
@@ -119,7 +151,7 @@ redirect_from:
             <span class="cv-item__title">Assistant Professor</span>
             <span class="cv-item__location">(ETSIT, UPM)</span>
           </h3>
-          <span class="cv-item__year">2022–2023</span>
+          <span class="cv-item__year">2022-2023</span>
         </div>
         <p class="cv-item__detail cv-item__detail--summary">Teaching and mentoring in statistics, signal processing, and AI/data science-related courses</p>
       </article>
@@ -130,7 +162,7 @@ redirect_from:
             <span class="cv-item__title">Business Consultant</span>
             <span class="cv-item__location">(Management Solutions)</span>
           </h3>
-          <span class="cv-item__year">2020–2021</span>
+          <span class="cv-item__year">2020-2021</span>
         </div>
         <p class="cv-item__detail cv-item__detail--summary">Built data extraction, transformation, and analysis tools for financial risk assessment</p>
       </article>
@@ -141,7 +173,7 @@ redirect_from:
             <span class="cv-item__title">Predoctoral Researcher</span>
             <span class="cv-item__location">(ETSIT, UPM)</span>
           </h3>
-          <span class="cv-item__year">2019–2020</span>
+          <span class="cv-item__year">2019-2020</span>
         </div>
         <p class="cv-item__detail cv-item__detail--summary">Developed deep-learning multimedia models for facial gesture transfer and video generation</p>
       </article>
@@ -160,7 +192,7 @@ redirect_from:
             <span class="cv-item__title">Institute of Ceramics and Glass (ICV)</span>
             <span class="cv-item__location">(CSIC, Madrid, Spain)</span>
           </h3>
-          <span class="cv-item__year">2025–2026</span>
+          <span class="cv-item__year">2025-2026</span>
         </div>
         <p class="cv-item__detail cv-item__detail--duration">
           <i class="fa-regular fa-clock" aria-hidden="true"></i>
@@ -195,7 +227,7 @@ redirect_from:
   <section class="cv-more">
     <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
 
-    <p class="cv-more__prompt">Want to explore more?</p>
+    <p class="cv-more__prompt">For the research behind this trajectory, keep exploring here.</p>
 
     <div class="cv-more__links">
       <a class="cv-more__link" href="{{ '/' | prepend: base_path }}">

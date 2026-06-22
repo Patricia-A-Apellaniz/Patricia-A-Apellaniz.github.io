@@ -32,8 +32,12 @@ author_profile: true
 <div class="pubs-top">
   <div class="pubs-top__overview">
     <div class="pubs-hero">
+      <div class="pubs-hero__label">
+        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+        <span>Research outputs</span>
+      </div>
       <p class="pubs-intro">
-        An overview of my recent research outputs, spanning methodological development, applied machine learning, and healthcare-oriented AI.
+        A curated overview of my research outputs across generative AI, survival analysis, synthetic data, federated learning, and healthcare-oriented machine learning.
       </p>
 
       <div class="pubs-stats">
@@ -148,7 +152,7 @@ author_profile: true
 
 <div class="pubs-section-head pubs-section-head--compact">
   <h2>Explore publications</h2>
-  <p>Search and filter the full publication list.</p>
+  <p>Search by title, venue, author, year, publication type, or research topic.</p>
 </div>
 
 <div class="pubs-toolbar">
@@ -226,6 +230,7 @@ author_profile: true
 <section class="pubs-all">
   <div class="pubs-section-head">
     <h2>All publications</h2>
+    <p>Non-featured publications are listed below and can be filtered from the toolbar.</p>
   </div>
 
   <div class="pub-list" id="publications-list">

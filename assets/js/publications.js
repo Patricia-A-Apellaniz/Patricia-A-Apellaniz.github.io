@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const chartRows = Array.from(document.querySelectorAll(".pub-chart__row"));
 
     let activeType = "all";
+    let filterRun = 0;
 
     function normalize(value) {
         return (value || "").toLowerCase().trim();
@@ -39,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function applyFilters() {
+        filterRun += 1;
+        const currentRun = filterRun;
         const query = normalize(searchInput ? searchInput.value : "");
         const activeYear = yearOptionButtons.find((button) => button.classList.contains("is-active"))?.dataset.yearValue || "all";
         const selectedTopics = getSelectedTopics();
@@ -46,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let visible = 0;
 
         items.forEach((item) => {
+            item.classList.add("is-filtering");
+
             const itemTopics = normalize(item.dataset.topics).split("|").filter(Boolean);
 
             const matchesType = activeType === "all" || item.dataset.type === activeType;
@@ -57,13 +62,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 !query || normalize(item.dataset.search).includes(query);
 
             const show = matchesType && matchesYear && matchesTopic && matchesSearch;
-            item.classList.toggle("is-hidden", !show);
+            window.setTimeout(() => {
+                if (currentRun !== filterRun) return;
+                item.classList.toggle("is-hidden", !show);
+                window.requestAnimationFrame(() => {
+                    item.classList.remove("is-filtering");
+                });
+            }, 90);
 
             if (show) visible += 1;
         });
 
         if (emptyState) {
-            emptyState.classList.toggle("is-hidden", visible > 0);
+            window.setTimeout(() => {
+                if (currentRun !== filterRun) return;
+                emptyState.classList.toggle("is-hidden", visible > 0);
+            }, 100);
         }
     }
 
@@ -117,13 +131,16 @@ document.addEventListener("DOMContentLoaded", function () {
         1
     );
 
-    chartRows.forEach((row) => {
-        const count = Number(row.dataset.count || 0);
-        const bar = row.querySelector(".pub-chart__bar");
+    window.requestAnimationFrame(() => {
+        chartRows.forEach((row) => {
+            const count = Number(row.dataset.count || 0);
+            const bar = row.querySelector(".pub-chart__bar");
 
-        if (bar) {
-            bar.style.width = `${(count / maxCount) * 100}%`;
-        }
+            if (bar) {
+                bar.style.width = `${(count / maxCount) * 100}%`;
+                bar.classList.add("is-animated");
+            }
+        });
     });
 
     yearOptionButtons.forEach((button) => {

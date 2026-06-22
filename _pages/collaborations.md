@@ -7,10 +7,11 @@ author_profile: true
 
 {% assign collaborations = site.data.collaborations %}
 <div class="collaborations-page collaborations-page--projects">
-  <section class="collaborations-rail-section" id="collaborations" data-rail-wrapper>
+  <section class="collaborations-rail-section collaborations-rail-section--projects" id="collaborations" data-rail-wrapper>
     <div class="collaborations-rail-section__head">
       <div class="collaborations-rail-section__heading">
         <p class="collaborations-section__title-pill">Projects</p>
+        <p class="collaborations-section__lede">Funded and consortium-based work around trustworthy AI, synthetic data, and healthcare applications.</p>
       </div>
       <div class="collaborations-rail-controls" aria-label="Projects navigation">
         <button class="collaborations-rail-controls__button" type="button" data-rail-prev aria-label="Scroll projects left">
@@ -87,6 +88,10 @@ author_profile: true
 
             <p class="collaborations-card__summary">{{ item.summary }}</p>
 
+            {% if item.role %}
+              <p class="collaborations-card__role">{{ item.role }}</p>
+            {% endif %}
+
             {% if item.tags %}
               <div class="collaborations-tags">
                 {% for tag in item.tags %}
@@ -119,10 +124,11 @@ author_profile: true
     </div>
   </section>
 
-  <section class="collaborations-rail-section" id="research-collaborations" data-rail-wrapper>
+  <section class="collaborations-rail-section collaborations-rail-section--research" id="research-collaborations" data-rail-wrapper>
     <div class="collaborations-rail-section__head">
       <div class="collaborations-rail-section__heading">
         <p class="collaborations-section__title-pill">Research stays &amp; collaborations</p>
+        <p class="collaborations-section__lede">Institutional collaborations and research stays that connect methods with real scientific problems.</p>
       </div>
       <div class="collaborations-rail-controls" aria-label="Research stays and collaborations navigation">
         <button class="collaborations-rail-controls__button" type="button" data-rail-prev aria-label="Scroll research stays and collaborations left">
@@ -138,7 +144,7 @@ author_profile: true
       {% for item in collaborations.research_collaborations %}
         {% assign primary_link = item.links | where: "primary", true | first %}
         {% assign media_href = item.media_link | default: primary_link.url %}
-        <article class="collaborations-card collaborations-card--environment">
+        <article class="collaborations-card collaborations-card--environment{% if item.title contains 'HeaDS' %} collaborations-card--heads{% endif %}">
           {% if item.gallery and item.gallery.size > 0 %}
             <div class="collaborations-card__media collaborations-card__media--slider" data-card-slider>
               <div class="collaborations-card__media-track" data-card-slider-track>
@@ -199,6 +205,10 @@ author_profile: true
 
             <p class="collaborations-card__summary">{{ item.summary }}</p>
 
+            {% if item.role %}
+              <p class="collaborations-card__role">{{ item.role }}</p>
+            {% endif %}
+
             {% if item.tags %}
               <div class="collaborations-tags">
                 {% for tag in item.tags %}
@@ -233,7 +243,7 @@ author_profile: true
 
   <section class="collaborations-more">
     <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-    <p class="collaborations-more__prompt">Want to explore more?</p>
+    <p class="collaborations-more__prompt">These collaborations connect directly with my publications and academic profile.</p>
     <div class="collaborations-more__links">
       <a class="collaborations-more__link" href="{{ '/publications/' | prepend: base_path }}">
         <span>Publications</span>

@@ -46,6 +46,14 @@
             <p class="author__role">{{ author.role }}</p>
             {% endif %}
 
+            {% if author.affiliation_note %}
+            <p class="author__affiliation-note">{{ author.affiliation_note }}</p>
+            {% endif %}
+
+            {% if author.collaboration_note %}
+            <p class="author__collaboration-note">{{ author.collaboration_note }}</p>
+            {% endif %}
+
             {% if author.bio %}
             <div class="author__bio">{{ author.bio | markdownify }}</div>
             {% endif %}
@@ -74,6 +82,20 @@
         <a class="author-card__action author-card__action--primary" href="mailto:{{ author.email }}">
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <span>Email</span>
+        </a>
+        {% endif %}
+
+        {% if author.cv %}
+        <a class="author-card__action" href="{{ cv_url }}" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+            <span>CV</span>
+        </a>
+        {% endif %}
+
+        {% if author.googlescholar %}
+        <a class="author-card__action" href="{{ author.googlescholar }}" target="_blank" rel="noopener noreferrer">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            <span>Scholar</span>
         </a>
         {% endif %}
     </div>
