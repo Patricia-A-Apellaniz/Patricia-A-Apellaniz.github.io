@@ -7,7 +7,7 @@ author_profile: true
 
 {% assign collaborations = site.data.collaborations %}
 <div class="collaborations-page collaborations-page--projects">
-  <h1 class="collaborations-page__title">Collaborations</h1>
+  <h1 class="page__title">Collaborations</h1>
 
   <section class="collaborations-rail-section collaborations-rail-section--projects" id="collaborations" data-rail-wrapper>
     <div class="collaborations-rail-section__head">
