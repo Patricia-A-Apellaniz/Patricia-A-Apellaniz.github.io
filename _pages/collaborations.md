@@ -10,7 +10,10 @@ author_profile: true
   <section class="collaborations-rail-section collaborations-rail-section--projects" id="collaborations" data-rail-wrapper>
     <div class="collaborations-rail-section__head">
       <div class="collaborations-rail-section__heading">
-        <p class="collaborations-section__title-pill">Projects</p>
+        <p class="collaborations-section__title-pill">
+          <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+          <span>Projects</span>
+        </p>
         <p class="collaborations-section__lede">Funded and consortium-based work around trustworthy AI, synthetic data, and healthcare applications.</p>
       </div>
       <div class="collaborations-rail-controls" aria-label="Projects navigation">
@@ -127,7 +130,10 @@ author_profile: true
   <section class="collaborations-rail-section collaborations-rail-section--research" id="research-collaborations" data-rail-wrapper>
     <div class="collaborations-rail-section__head">
       <div class="collaborations-rail-section__heading">
-        <p class="collaborations-section__title-pill">Research stays &amp; collaborations</p>
+        <p class="collaborations-section__title-pill">
+          <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+          <span>Research stays &amp; collaborations</span>
+        </p>
         <p class="collaborations-section__lede">Institutional collaborations and research stays that connect methods with real scientific problems.</p>
       </div>
       <div class="collaborations-rail-controls" aria-label="Research stays and collaborations navigation">
