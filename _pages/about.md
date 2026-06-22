@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "About me"
+seo_title: "Patricia A. Apellániz - Assistant Professor & AI Researcher"
+description: "Patricia A. Apellániz is an Assistant Professor at EPS-UAM in the AUDIAS group and an AI researcher working on generative models, survival analysis, synthetic data, and federated learning."
 author_profile: true
 lang: en
 redirect_from: 
