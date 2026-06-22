@@ -11,6 +11,14 @@
   display: none;
 }
 
+.collaborations-page__title {
+  margin: 0 0 -0.25rem;
+  color: #4a4f56;
+  font-size: 1.55rem;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
 .collaborations-rail-section {
   position: relative;
   display: grid;
@@ -51,10 +59,10 @@
   gap: 0.45rem;
   width: fit-content;
   margin: 0;
-  padding: 0.32rem 0.64rem;
+  padding: 0.28rem 0.62rem;
   border-radius: 999px;
   background: rgba(17, 24, 39, 0.06);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: #374151;
   line-height: 1;
@@ -62,6 +70,7 @@
 
 .collaborations-section__title-pill i {
   color: #6d28d9;
+  font-size: 0.86rem;
 }
 
 .collaborations-rail-controls {
