@@ -84,6 +84,9 @@ h1,h2,h3{font-weight:800}h1{letter-spacing:-4px}h1 em{font-family:Manrope,sans-s
 
 .album-photo>a{display:block}.album-photo>a:focus-visible{outline:3px solid var(--plum);outline-offset:3px}
 .hero>div{min-width:0}.profile-links{width:100%;min-width:0}
+.cv-cover h2{white-space:nowrap;font-size:clamp(20px,2.35vw,30px)}
+.cv-cover .cv-cover-location{margin:0 0 5px}
+@media(max-width:650px){.cv-cover{grid-template-columns:minmax(0,1fr);position:relative}.cv-cover h1{margin-bottom:80px}.cv-cover h2{font-size:clamp(14px,4.2vw,27px);letter-spacing:-.4px}.cv-cover .cv-cartoon{position:absolute;top:0;right:0;width:90px;height:110px}.cv-cover .cv-cartoon:after{font-size:30px;top:15px}.cv-cover .cv-cover-location{font-size:11px}}
 /* Mobile review: clear filter labels and larger tap targets. */
 @media(max-width:650px){
  .site-header nav a{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
