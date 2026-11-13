@@ -39,7 +39,8 @@
       const abstract = document.getElementById(button.getAttribute('aria-controls'));
       const open = button.getAttribute('aria-expanded') !== 'true';
       button.setAttribute('aria-expanded', String(open));
-      button.textContent = open ? 'Close abstract' : 'Abstract';
+      button.textContent = open ? 'Close' : 'Abstract';
+      button.setAttribute('aria-label', open ? 'Close abstract' : 'Show abstract');
       abstract.hidden = !open;
     });
   }

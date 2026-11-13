@@ -3,6 +3,8 @@
   if (!rail) return;
   const items = [...rail.querySelectorAll('.horizontal-moment')];
   const hover = matchMedia('(hover:hover) and (pointer:fine)');
+  const narrow = matchMedia('(max-width:650px)');
+  const canHover = () => hover.matches && !narrow.matches;
   let timer;
   function open(item, reveal = false) {
     clearTimeout(timer);
@@ -21,16 +23,16 @@
   items.forEach((item, index) => {
     const button = item.querySelector('button');
     button.addEventListener('click', () => {
-      if (!hover.matches) open(item.classList.contains('is-open') ? null : item, true);
+      if (!canHover()) open(item.classList.contains('is-open') ? null : item, true);
     });
     item.addEventListener('pointerenter', () => {
-      if (!hover.matches) return;
+      if (!canHover()) return;
       clearTimeout(timer);
       timer = setTimeout(() => open(item), 120);
     });
     item.addEventListener('pointerleave', () => {
       clearTimeout(timer);
-      if (hover.matches) timer = setTimeout(() => open(null), 120);
+      if (canHover()) timer = setTimeout(() => open(null), 120);
     });
     button.addEventListener('focus', () => {
       if (button.matches(':focus-visible')) open(item, true);
@@ -53,7 +55,7 @@
       items[next].querySelector('button').focus({preventScroll:true});
     });
   });
-  rail.addEventListener('pointerleave', () => { if (hover.matches) open(null); });
+  rail.addEventListener('pointerleave', () => { if (canHover()) open(null); });
   rail.addEventListener('focusout', event => {
     if (!rail.contains(event.relatedTarget)) open(null);
   });
