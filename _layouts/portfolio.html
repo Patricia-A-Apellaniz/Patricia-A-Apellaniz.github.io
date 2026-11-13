@@ -4,11 +4,11 @@
 {% include seo.html %}
 {% include head/custom.html %}
 <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
-<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <script>document.documentElement.classList.replace('no-js','js');</script>
 {% include analytics.html %}
 </head><body class="{{ page.body_class }}"><a class="skip-link" href="#main-content">Skip to content</a><div class="wrap">
 {% include portfolio/header.html %}<main id="main-content">{{ content }}</main>{% include portfolio/footer.html %}
-</div>{% for script in page.scripts %}<script src="{{ '/assets/js/' | append: script | relative_url }}" defer></script>{% endfor %}
+</div>{% for script in page.scripts %}<script src="{{ '/assets/js/' | append: script | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>{% endfor %}
 {% include comments-providers/scripts.html %}
 </body></html>
