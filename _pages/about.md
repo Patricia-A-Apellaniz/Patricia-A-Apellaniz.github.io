@@ -1,96 +1,17 @@
 ---
+layout: portfolio
 permalink: /
 title: "About me"
 seo_title: "Patricia A. Apellániz - Assistant Professor & AI Researcher"
 description: "Patricia A. Apellániz is an Assistant Professor at EPS-UAM in the AUDIAS group and an AI researcher working on generative models, survival analysis, synthetic data, and federated learning."
-author_profile: true
 lang: en
-redirect_from: 
-  - /about/
-  - /about.html
+scripts: [journey.js]
+redirect_from: [/about/, /about.html]
 ---
-
-<div class="about-home">
-
-  <section class="about-narrative">
-
-    <div class="about-narrative__intro">
-      <div class="about-narrative__intro-copy">
-        <span class="about-eyebrow">Research profile</span>
-
-        <h2 class="about-narrative__title">Assistant Professor &amp; AI Researcher</h2>
-
-        <p class="about-narrative__lede about-narrative__lede--hello">
-          <span class="about-hello">
-            <i class="fa-solid fa-hand-sparkles" aria-hidden="true"></i>
-            <span>¡Hola!</span>
-          </span>
-          <br>
-          <span class="about-hello__intro">This is Patricia A. Apellániz. Nice to meet you!</span>
-        </p>
-
-        <p class="about-narrative__lede about-narrative__lede--secondary">
-          I currently work as an <strong>Assistant Professor (Ayudante Doctora) at Escuela Politécnica Superior, Universidad Autónoma de Madrid (EPS-UAM)</strong>, within the <strong>AUDIAS</strong> group.
-        </p>
-
-        <p class="about-narrative__lede about-narrative__lede--secondary">
-          I have always been naturally curious and full of questions, and I genuinely enjoy learning new things. That is probably what brought me here: doing research at university.
-        </p>
-      </div>
-
-      <figure class="about-hero-visual">
-        <img src="/images/about/graduation.jpg" alt="Graduation portrait">
-      </figure>
-    </div>
-
-    <div class="about-narrative__story">
-
-      <article class="about-story-card">
-        <div class="about-story-card__meta">
-          <span class="about-story-card__icon">
-            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
-          </span>
-          <span class="about-story-card__eyebrow">2016</span>
-        </div>
-
-        <p>Back in 2016, during my Telecommunications Engineering Bachelor's degree at Universidad Autónoma de Madrid (UAM), I came across something called <em>machine learning</em> in one of my classes. Since then, I have kept asking questions and learning about this fascinating field and its many applications.</p>
-      </article>
-
-      <article class="about-story-card">
-        <div class="about-story-card__meta">
-          <span class="about-story-card__icon">
-            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-          </span>
-          <span class="about-story-card__eyebrow">2025</span>
-        </div>
-
-        <p>That curiosity eventually led me to defend my PhD thesis at UPM in April 2025, titled "Deep Generative Models for Survival Analysis and Synthetic Data Generation in Healthcare", supervised by Professor Juan Parras Moral.</p>
-      </article>
-
-      <article class="about-story-card about-story-card--wide">
-        <div class="about-story-card__meta">
-          <span class="about-story-card__icon">
-            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
-          </span>
-          <span class="about-story-card__eyebrow">Today</span>
-        </div>
-
-        <p>And here I am - teaching, researching, still learning, and still trying to better understand a world that keeps evolving and that, I believe, has enormous potential to improve our lives.</p>
-
-
-        <figure class="about-inline-visual">
-          <img src="/images/about/gaps.jpg" alt="Group photo at GAPS">
-          <figcaption>With members of GAPS on the day of my PhD defense - April 25, 2025.</figcaption>
-        </figure>
-      </article>
-
-    </div>
-
-  </section>
-
-    <div class="about-contact-note">
-      <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
-      <p>If you would like to talk, ask a question, or simply say hello, feel free to reach out through whichever channel you prefer.</p>
-    </div>
-
-</div>
+<section class="hero about-hero"><div><div class="ai-role"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3M9 15l3-6 3 6m-5-2h4"/></svg>AI researcher &amp; lecturer</div><h1>¡Hola!<br>I'm <em>Patricia.</em></h1><p class="intro">I’m an <strong>Assistant Professor (Ayudante Doctora)</strong> at Escuela Politécnica Superior, Universidad Autónoma de Madrid, within the <a href="https://audias.ii.uam.es/">AUDIAS</a> group.</p><p class="intro">I’ve always been curious and full of questions, and I enjoy learning new things. That’s probably what brought me here: doing research at university. My work is mostly in healthcare, but I also like exploring what AI can do in other fields.</p><div class="profile-links" aria-label="Profile links">{% include portfolio/social-links.html %}<a href="{{ site.author.cv | relative_url }}">CV ↓</a></div><p class="about-location">Madrid, Spain · <a href="https://www.gaps.ssr.upm.es/">Research collaborator at GAPS-UPM</a></p></div><div class="hero-art"><span class="ai-sticker ai-network" aria-hidden="true"><svg viewBox="0 0 72 70" aria-hidden="true"><path d="M13 14 35 24 59 10M13 35 35 24 59 35M13 56 35 46 59 35M13 14 35 46 59 59M13 56 35 24M13 35 35 46" opacity=".55"/><g fill="#fffcf8"><circle cx="13" cy="14" r="5"/><circle cx="13" cy="35" r="5"/><circle cx="13" cy="56" r="5"/><circle cx="35" cy="24" r="6"/><circle cx="35" cy="46" r="6"/><circle cx="59" cy="10" r="5"/><circle cx="59" cy="35" r="5"/><circle cx="59" cy="59" r="5"/></g></svg></span><svg class="ai-link-path" viewBox="0 0 110 120" aria-hidden="true"><path d="M35 0C-20 60 110 30 95 110"/></svg><span class="ai-sticker ai-code" aria-hidden="true"><svg viewBox="0 0 60 40"><path d="m18 10-12 10 12 10m24-20 12 10-12 10M35 6 25 34"/></svg></span><div class="orbit" aria-hidden="true"></div><span class="doodle" aria-hidden="true">↗</span><img src="{{ site.baseurl }}/images/avatars/patricia-portrait-v2.png" alt="Illustrated portrait of Patricia holding her tablet and stylus"></div></section>
+<section class="news-section" id="news"><div class="news-head"><h2>{% include portfolio/icon.html name="news" class="section-icon" %}News</h2><a href="{{ '/publications/' | relative_url }}">Publications ↗</a></div><ul class="news-list">
+{% assign news = site.data.news | sort: 'date' | reverse %}{% for item in news limit: 5 %}<li class="news-item"><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time><a href="{{ item.url }}">{{ item.text }} ↗</a></li>{% endfor %}
+</ul></section>
+<section class="scrapbook" id="journey"><div class="journey-head"><h2>{% include portfolio/icon.html name="route" class="section-icon" %}My journey</h2><a href="{{ '/cv/' | relative_url }}">Full CV ↗</a></div><div class="timeline-scroll"><ol class="horizontal-timeline" aria-label="My journey">
+{% for item in site.data.journey %}<li class="horizontal-moment" id="{{ item.id }}"><button type="button" class="milestone-toggle" id="toggle-{{ item.id }}" aria-expanded="false" aria-controls="detail-{{ item.id }}"><span class="milestone-date">{{ item.date }}</span><span class="milestone-dot" aria-hidden="true"></span><span class="milestone-title">{{ item.title }}</span>{% if item.photo %}<img class="milestone-thumb" src="{{ item.photo | relative_url }}" alt="" loading="lazy">{% else %}<span class="milestone-symbol" aria-hidden="true">↗</span>{% endif %}</button><div class="milestone-detail" id="detail-{{ item.id }}" role="region" aria-labelledby="toggle-{{ item.id }}" hidden><p>{{ item.text }}</p><span class="milestone-place">{{ item.place }}</span>{% if item.photo %}<figure><a href="{{ item.photo | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open image: {{ item.alt | escape }}"><img src="{{ item.photo | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy"></a><figcaption>{{ item.caption }}</figcaption></figure>{% endif %}</div></li>{% endfor %}
+</ol></div></section>

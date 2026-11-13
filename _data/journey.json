@@ -1,0 +1,94 @@
+[
+  {
+    "id": "first-ml",
+    "date": "2016 → 2018",
+    "title": "My first machine learning class",
+    "text": "In 2016, I took my first machine learning class during my Telecommunications Engineering degree at UAM. In 2018, I put it into practice in my <a href=\"https://repositorio.uam.es/entities/publication/3f447422-0fdc-489d-953a-9493688e3ce0\">bachelor’s thesis on voice activity detection using neural networks</a>.",
+    "place": "<a href=\"https://www.uam.es/eps/inicio\">EPS · Universidad Autónoma de Madrid</a>",
+    "photo": "/images/journey/tfg-2018.png",
+    "alt": "Cover of Patricia’s bachelor’s thesis on voice activity detection using neural networks, July 2018",
+    "caption": "My bachelor’s thesis · July 2018."
+  },
+  {
+    "id": "ciber",
+    "date": "2017–2019",
+    "title": "Programming at Ciber",
+    "text": "I joined Ciber as an Android development intern in October 2017 and stayed on as an Android developer from April 2018 to October 2019. I love programming, and I really enjoyed working in a company. Ciber is now part of <a href=\"https://www.experis.es/es\">Experis</a>.",
+    "place": "<a href=\"https://www.experis.es/es\">Ciber (now Experis)</a> · Android development",
+    "photo": "/images/journey/experis.svg",
+    "alt": "Experis, the current company logo",
+    "caption": "Experis · Current company branding."
+  },
+  {
+    "id": "degrees",
+    "date": "2018 → 2020",
+    "title": "From UAM to UPM",
+    "text": "After my BSc at UAM, I moved to UPM for the MSc in Telecommunications Engineering, specialising in Machine Learning and Multimedia Data Science. With my first research contract at GATV, I worked on deepfakes: transferring facial gestures and generating video from audio-visual information.",
+    "place": "MSc & first research contract · <a href=\"https://www.gatv.ssr.upm.es/\">GATV</a>, <a href=\"https://www.upm.es/\">ETSIT-UPM</a>",
+    "photo": "/images/journey/facial-gesture-transfer.png",
+    "alt": "An example from Patricia’s facial gesture transfer research showing an input portrait, facial landmarks and a generated face",
+    "caption": "Facial gesture transfer experiments · Master’s research, 2019–2020."
+  },
+  {
+    "id": "consulting",
+    "date": "2020–2021",
+    "title": "Consultancy at MS",
+    "text": "I returned to consultancy at <a href=\"https://www.managementsolutions.com/en\">Management Solutions</a> from September 2020 to January 2021, developing data tools for financial risk monitoring and management. In the meantime, I kept looking for a role related to AI.",
+    "place": "<a href=\"https://www.managementsolutions.com/en\">Management Solutions</a>",
+    "photo": "/images/journey/management-solutions.png",
+    "alt": "Management Solutions logo",
+    "caption": "Management Solutions · 2020–2021."
+  },
+  {
+    "id": "back-upm",
+    "date": "2021",
+    "title": "Back to UPM",
+    "text": "On 18 January 2021, I joined <a href=\"https://www.gaps.ssr.upm.es/\">GAPS</a> as a predoctoral researcher and began my PhD in Communications Technologies and Systems. My research focused on generative models, survival analysis and synthetic data in healthcare.",
+    "place": "<a href=\"https://www.gaps.ssr.upm.es/\">GAPS</a> · <a href=\"https://www.upm.es/\">ETSIT, Universidad Politécnica de Madrid</a>",
+    "photo": "/images/journey/gaps-group.jpg",
+    "alt": "Patricia with the GAPS group outside ETSIT at UPM",
+    "caption": "With the GAPS group at UPM."
+  },
+  {
+    "id": "copenhagen",
+    "date": "2023",
+    "title": "Three months in Copenhagen",
+    "text": "I joined Anders Krogh’s group at the <a href=\"https://heads.ku.dk/\">Center for Health Data Science</a> to work on optimisation techniques for generative models.",
+    "place": "<a href=\"https://heads.ku.dk/\">HeaDS</a> · <a href=\"https://www.ku.dk/\">University of Copenhagen</a>",
+    "photo": "/images/collaborations/heads/group.jpg",
+    "alt": "Members of the HeaDS group together in Copenhagen",
+    "caption": "With the HeaDS group in Copenhagen."
+  },
+  {
+    "id": "phd",
+    "date": "25 April 2025",
+    "title": "PhD defended!",
+    "text": "I defended my thesis, <a href=\"https://oa.upm.es/88681/\">Deep Generative Models for Survival Analysis and Synthetic Data Generation in Healthcare</a>, supervised by Juan Parras Moral.",
+    "place": "<a href=\"https://www.upm.es/\">ETSIT · Universidad Politécnica de Madrid</a>",
+    "photo": "/images/about/gaps.jpg",
+    "alt": "Patricia with GAPS members on the day of her PhD defense",
+    "caption": "With GAPS on the day of my defense.",
+    "featured": true
+  },
+  {
+    "id": "csic",
+    "date": "2025–2026",
+    "title": "AI meets batteries",
+    "text": "A 6.5-month research stay at ICV-CSIC, working with Nataly Carolina Rosero Navarro’s group on battery design and diagnostics.",
+    "place": "<a href=\"https://www.icv.csic.es/\">Institute of Ceramics and Glass · CSIC</a>",
+    "photo": "/images/collaborations/icv/group.jpg",
+    "alt": "Research group at the Institute of Ceramics and Glass",
+    "caption": "With the group at ICV-CSIC."
+  },
+  {
+    "id": "uam",
+    "date": "2026",
+    "title": "Back at UAM",
+    "text": "On 11 June 2026, I joined <a href=\"https://www.uam.es/eps/inicio\">EPS-UAM</a> as an Assistant Professor (Ayudante Doctora) in the <a href=\"https://audias.ii.uam.es/\">AUDIAS</a> group, while continuing my research collaboration with <a href=\"https://www.gaps.ssr.upm.es/\">GAPS-UPM</a>.",
+    "place": "<a href=\"https://audias.ii.uam.es/\">AUDIAS</a> · <a href=\"https://www.uam.es/eps/inicio\">EPS-UAM</a> · Madrid",
+    "photo": "/images/journey/audias-2026.jpg",
+    "alt": "Patricia with members of the AUDIAS group outdoors at UAM",
+    "caption": "With the AUDIAS group · 2026.",
+    "now": true
+  }
+]

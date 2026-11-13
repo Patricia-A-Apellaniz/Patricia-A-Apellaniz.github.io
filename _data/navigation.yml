@@ -1,10 +1,9 @@
-# main links links
 main:
+  - title: "About"
+    url: /
   - title: "Publications"
     url: /publications/
-
   - title: "Collaborations"
     url: /collaborations/
-    
   - title: "CV"
     url: /cv/

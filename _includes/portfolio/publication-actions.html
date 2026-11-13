@@ -1,0 +1,5 @@
+{% assign pub = include.post %}
+{% if pub.paperurl and pub.paperurl != '' %}{% assign pdf_href = pub.paperurl %}{% unless pdf_href contains '://' %}{% assign pdf_href = pdf_href | relative_url %}{% endunless %}<a href="{{ pdf_href }}" target="_blank" rel="noopener noreferrer">PDF ↗</a>{% endif %}
+{% if pub.link and pub.link != '' %}<a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">Paper ↗</a>{% endif %}
+{% if pub.github and pub.github != '' %}<a href="{{ pub.github }}" target="_blank" rel="noopener noreferrer">{% include portfolio/icon.html name="github" class="link-icon" %}GitHub ↗</a>{% endif %}
+{% if pub.code and pub.code != '' %}<a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">Code ↗</a>{% endif %}

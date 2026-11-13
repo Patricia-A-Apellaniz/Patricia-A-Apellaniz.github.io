@@ -1,0 +1,57 @@
+{
+  "education": [
+    {
+      "title": "BSc in Telecommunications Engineering",
+      "place": "EPS, UAM",
+      "date": "2018",
+      "details": [
+        "Multimedia signal specialization",
+        "Thesis: <a href=\"https://repositorio.uam.es/entities/publication/3f447422-0fdc-489d-953a-9493688e3ce0\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Voice Activity Detection based on Neural Networks</em></a>"
+      ],
+      "url": "https://www.uam.es/eps/inicio"
+    },
+    {
+      "title": "MSc in Telecommunications Engineering",
+      "place": "ETSIT, UPM",
+      "date": "2020",
+      "details": [
+        "Machine Learning and Multimedia Data Science specialization",
+        "Thesis: <a href=\"https://oa.upm.es/62958/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Analysis and implementation of deep learning algorithms for face-to-face translation based on audio-visual representations</em></a>"
+      ],
+      "url": "https://www.upm.es/"
+    },
+    {
+      "title": "PhD in Communications Technologies and Systems",
+      "place": "ETSIT, UPM",
+      "date": "2025",
+      "details": [
+        "Thesis: <a href=\"https://oa.upm.es/88681/\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Deep Generative Models for Survival Analysis and Synthetic Data Generation in Healthcare</em></a>"
+      ],
+      "url": "https://www.upm.es/"
+    }
+  ],
+  "stays": [
+    {
+      "title": "Institute of Ceramics and Glass (ICV)",
+      "place": "CSIC, Madrid, Spain",
+      "date": "2025-2026",
+      "details": [
+        "6.5 months",
+        "AI-based battery design and diagnostics, in collaboration with the group of Nataly Carolina Rosero Navarro"
+      ],
+      "url": "https://www.icv.csic.es/",
+      "photo": "/images/collaborations/icv/group.jpg"
+    },
+    {
+      "title": "Center for Health Data Science (HeaDS)",
+      "place": "University of Copenhagen, Copenhagen, Denmark",
+      "date": "2023",
+      "details": [
+        "3 months",
+        "Optimization techniques for generative models and federated learning, in collaboration with the group of Anders Krogh"
+      ],
+      "url": "https://heads.ku.dk/",
+      "photo": "/images/collaborations/heads/group.jpg"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+---
+layout: portfolio
+body_class: publication-page
+---
+<article class="publication-detail" itemscope itemtype="https://schema.org/ScholarlyArticle"><a class="text-link" href="{{ '/publications/' | relative_url }}">← All publications</a><h1 itemprop="headline">{{ page.title }}</h1><p class="publication-detail-meta">{{ page.authors | escape }}</p><p class="venue">{{ page.venue }} · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time></p><div class="featured-links">{% include portfolio/publication-actions.html post=page %}</div><div class="publication-detail-content" itemprop="text">{{ content }}</div>{% if page.citation %}<div class="publication-citation"><h2>Recommended citation</h2><p>{{ page.citation | escape }}</p></div>{% endif %}
+{% include page__taxonomy.html %}{% if page.share %}{% include social-share.html %}{% endif %}{% include post_pagination.html %}{% if site.comments.provider and page.comments %}{% include comments.html %}{% endif %}</article>

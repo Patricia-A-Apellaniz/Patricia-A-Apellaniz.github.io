@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "cap",
+    "title": "Survival analysis",
+    "description": "Probabilistic modelling, censoring, and competing risks in healthcare."
+  },
+  {
+    "icon": "book",
+    "title": "Synthetic data",
+    "description": "Tabular generation, validation, and low-data generation strategies."
+  },
+  {
+    "icon": "network",
+    "title": "Federated learning",
+    "description": "Privacy-preserving learning under heterogeneous and non-IID settings."
+  },
+  {
+    "icon": "flask",
+    "title": "Interpretable AI",
+    "description": "Transparent modelling and explanation-oriented approaches for trustworthy AI in healthcare."
+  }
+]

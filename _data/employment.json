@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Assistant Professor (Ayudante Doctora)",
+    "place": "EPS, UAM",
+    "date": "11 Jun 2026 – present",
+    "url": "https://www.uam.es/eps/inicio",
+    "group": "AUDIAS",
+    "groupUrl": "https://audias.ii.uam.es/",
+    "logo": "/images/collaborations/logos/logo-uam.png",
+    "logoAlt": "UAM",
+    "details": [
+      "Teaching and researching in AI and machine learning within AUDIAS, while continuing research collaborations with GAPS at UPM."
+    ]
+  },
+  {
+    "title": "Researcher",
+    "place": "ETSIT, UPM",
+    "date": "8 Jan 2024 – 10 Jun 2026",
+    "url": "https://www.upm.es/",
+    "group": "GAPS",
+    "groupUrl": "https://www.gaps.ssr.upm.es/",
+    "logo": "/images/collaborations/logos/logo-gaps.png",
+    "logoAlt": "GAPS",
+    "details": [
+      "Developing generative, explainable and federated AI methods for European healthcare projects."
+    ]
+  },
+  {
+    "title": "Assistant Professor",
+    "place": "ETSIT, UPM",
+    "date": "1 Mar 2022 – 29 Dec 2023",
+    "url": "https://www.upm.es/",
+    "group": "GAPS",
+    "groupUrl": "https://www.gaps.ssr.upm.es/",
+    "logo": "/images/collaborations/logos/logo-politecnica.jpg",
+    "logoAlt": "UPM",
+    "details": [
+      "Teaching and mentoring in statistics, signal processing and AI/data science-related courses."
+    ]
+  },
+  {
+    "title": "Predoctoral Researcher",
+    "place": "ETSIT, UPM",
+    "date": "18 Jan 2021 – 28 Feb 2022",
+    "url": "https://www.upm.es/",
+    "group": "GAPS",
+    "groupUrl": "https://www.gaps.ssr.upm.es/",
+    "logo": "/images/collaborations/logos/logo-gaps.png",
+    "logoAlt": "GAPS",
+    "details": [
+      "Research on generative models, survival analysis and synthetic data in healthcare within GAPS."
+    ]
+  },
+  {
+    "title": "Business Consultant",
+    "place": "Management Solutions",
+    "date": "1 Sep 2020 – 15 Jan 2021",
+    "url": "https://www.managementsolutions.com/en",
+    "logo": "/images/journey/management-solutions.png",
+    "logoAlt": "Management Solutions",
+    "details": [
+      "Built data extraction, transformation and analysis tools for financial risk assessment."
+    ]
+  },
+  {
+    "title": "Predoctoral Researcher",
+    "place": "ETSIT, UPM",
+    "date": "22 Oct 2019 – 30 Jun 2020",
+    "url": "https://www.upm.es/",
+    "group": "GATV",
+    "groupUrl": "https://www.gatv.ssr.upm.es/",
+    "logo": "/images/collaborations/logos/logo-politecnica.jpg",
+    "logoAlt": "UPM",
+    "details": [
+      "Developed deep-learning multimedia models for facial gesture transfer and video generation."
+    ]
+  },
+  {
+    "title": "Android Developer",
+    "place": "Ciber (now Experis)",
+    "date": "2 Apr 2018 – 21 Oct 2019",
+    "url": "https://www.experis.es/es",
+    "logo": "/images/journey/experis.svg",
+    "logoAlt": "Experis, current company logo",
+    "details": [
+      "Continued working on Android application development after my internship."
+    ]
+  },
+  {
+    "title": "Android Developer Intern",
+    "place": "Ciber (now Experis)",
+    "date": "9 Oct 2017 – 30 Mar 2018",
+    "url": "https://www.experis.es/es",
+    "logo": "/images/journey/experis.svg",
+    "logoAlt": "Experis, current company logo",
+    "details": [
+      "Paid internship in Android application development."
+    ]
+  }
+]
