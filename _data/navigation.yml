@@ -7,3 +7,5 @@ main:
     url: /collaborations/
   - title: "CV"
     url: /cv/
+  - title: "Lab"
+    url: /lab/

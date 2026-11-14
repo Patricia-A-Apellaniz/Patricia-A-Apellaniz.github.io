@@ -5,9 +5,10 @@
 {% include head/custom.html %}
 <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
 <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+{% for style in page.styles %}<link rel="stylesheet" href="{{ '/assets/css/' | append: style | relative_url }}?v={{ site.time | date: '%s' }}">{% endfor %}
 <script>document.documentElement.classList.replace('no-js','js');</script>
 {% include analytics.html %}
-</head><body class="{{ page.body_class }}"><a class="skip-link" href="#main-content">Skip to content</a><div class="wrap">
+</head><body class="{{ page.body_class }}"{% if page.lab_exercise %} data-exercise="{{ page.lab_exercise }}"{% endif %}><a class="skip-link" href="#main-content">Skip to content</a><div class="wrap">
 {% include portfolio/header.html %}<main id="main-content">{{ content }}</main>{% include portfolio/footer.html %}
 </div>{% for script in page.scripts %}<script src="{{ '/assets/js/' | append: script | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>{% endfor %}
 {% include comments-providers/scripts.html %}

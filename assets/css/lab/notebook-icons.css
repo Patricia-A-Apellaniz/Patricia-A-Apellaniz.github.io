@@ -1,0 +1,40 @@
+.notebook-icon{display:inline-block;width:24px;height:24px;color:#743c69;vertical-align:middle;flex-shrink:0;overflow:visible;stroke-linecap:round;stroke-linejoin:round}.notebook-index .file-entry{display:grid;grid-template-columns:29px minmax(0,1fr) 8px;align-items:start;gap:8px;padding:12px 8px}.notebook-index .file-entry>div{min-width:0;overflow-wrap:anywhere;font-size:9px;line-height:1.6}.notebook-index .file-entry>div small{font-size:10px;line-height:1.6;margin-top:5px;font-family:Manrope,system-ui,sans-serif}.notebook-index .file-entry .entry-badge{position:relative;width:28px;height:36px;padding:0;display:block;color:#743c69}.entry-badge:before{content:'';position:absolute;inset:0 0 10px;background:#e3cfe965;border-radius:7px 9px 6px 9px;transform:rotate(-8deg);z-index:0}.file-entry:nth-of-type(2n) .entry-badge:before{background:#efd4d780;transform:rotate(6deg)}.entry-badge .notebook-icon{width:27px;height:27px;position:relative}.entry-number{font:7px ui-monospace,monospace;position:absolute;bottom:-1px;left:0;right:0;text-align:center;color:#ac8ba1}.notebook-index .file-entry>span:last-child{margin:3px 0 0;font-size:10px}.icon-title{display:flex;align-items:center;gap:13px}.experiment-title-icon{display:inline-flex;align-items:center;justify-content:center;flex:none;width:45px;height:45px;transform:rotate(-6deg);border-radius:11px 15px 10px 14px;background:#e3cfe97a;border:1px solid #d9c2d3;box-shadow:2px 2px 0 #e9d8e4}.experiment-title-icon .notebook-icon{width:35px;height:35px}.cell-topline h3{display:flex;align-items:center;gap:7px}.cell-topline h3 .cell-icon-wrap{display:inline-flex;align-items:center;justify-content:center;flex:none;width:27px;height:27px;margin:0;background:#e3cfe95c;border-radius:7px 9px 6px 9px;transform:rotate(-4deg)}.cell-icon-wrap .notebook-icon{width:23px;height:23px}.cell-topline h3>span:not(.cell-icon-wrap){margin-right:0}.output-topline h3{display:flex;align-items:center;gap:8px}.output-topline h3 .notebook-icon{width:24px;height:24px}.margin-note>span.note-icon{font-size:0;display:flex;align-items:flex-start;flex:none}.note-icon .notebook-icon{width:27px;height:27px}.source-details summary .notebook-icon{width:16px;height:16px;color:#98728b}.notebook-page .file-entry:focus-visible{outline-offset:3px}
+@media(max-width:1150px){.notebook-index .file-entry{grid-template-columns:27px minmax(0,1fr) 6px;gap:6px;padding:11px 7px}.notebook-index .file-entry>div{font-size:8px}.notebook-index .file-entry>div small{font-size:9px}.experiment-title-icon{width:40px;height:40px}.experiment-title-icon .notebook-icon{width:32px;height:32px}}
+@media(max-width:850px){.notebook-index .file-entry{display:flex;align-items:center;gap:7px;padding:8px 10px}.notebook-index .file-entry .entry-badge{width:25px;height:25px}.entry-badge:before{inset:0}.entry-badge .notebook-icon{width:24px;height:24px}.entry-number{display:none}.notebook-index .file-entry>div{font-size:9px;overflow-wrap:normal}.notebook-index .file-entry>div small,.notebook-index .file-entry>span:last-child{display:none}.notebook-index{gap:8px}}
+@media(max-width:540px){.notebook-index .file-entry{padding:7px 8px;gap:6px;min-height:43px}.notebook-index .file-entry>div{font-size:8px}.notebook-index .file-entry .entry-badge{width:22px;height:22px}.entry-badge .notebook-icon{width:22px;height:22px}.icon-title{gap:10px;align-items:flex-start}.experiment-title-icon{width:32px;height:32px;border-radius:8px 10px 7px 10px;margin-top:2px;box-shadow:1px 2px 0 #e9d8e4}.experiment-title-icon .notebook-icon{width:27px;height:27px}.cell-topline h3{gap:5px;align-items:flex-start}.cell-topline h3 .cell-icon-wrap{width:23px;height:23px;margin-top:-2px}.cell-icon-wrap .notebook-icon{width:20px;height:20px}.output-topline h3 .notebook-icon{width:22px;height:22px}.margin-note .note-icon .notebook-icon{width:22px;height:22px}.source-details summary .notebook-icon{width:14px;height:14px}}
+
+.lab-subtitle{margin:18px 0 0;color:var(--muted,#746b76);font-size:15px;line-height:1.5;}
+
+/* Readable notebook typography across all seven experiments. */
+.notebook-page .wrap{max-width:1380px}
+.workbench{grid-template-columns:255px minmax(0,1fr)}
+.notebook-index .file-entry>div{font-size:12px;line-height:1.65;color:#603650}
+.notebook-index .file-entry>div small{font-size:13px;line-height:1.6;color:#594754}
+.index-title,.index-caption,.index-back{font-size:12px;color:#65505f}
+.entry-number{font-size:9px;color:#76546c}
+.lab-subtitle{font-size:17px;color:#594b58}
+.eyebrow{font-size:12px}.heading-note{font-size:16px;color:#6b4b62}
+.file-tab{font-size:13px}.local-engine,.cell-kicker{font-size:11px;color:#70566a}
+.execution-status{font-size:12px;color:#62505e}.run-all,.toolbar-reset{font-size:13px}
+.markdown-cell>p:not(.cell-kicker){font-size:16px;color:#594b58;max-width:650px;line-height:1.8}
+.cell-topline h3{font-size:14px;color:#50334b}.cell-state{font-size:11px;color:#70596a}
+.parameter-row label,.parameter-row select,.seed-parameter input{font-size:13px;color:#60465a}
+.parameter-row output{font-size:15px}.range-ends{font-size:11px;color:#745b6d}
+.cell-gutter{font-size:12px;color:#79546f}
+.method-help,.source-details summary{font-size:12px;color:#6a5061}
+.source-details summary>span{font-size:11px;color:#745b6d}
+.source-details pre,.more-page .source-details pre{font-size:13px}
+.output-topline h3{font-size:17px}.reference-control,.visual-toggle,.more-page .parameter-row .feature-toggle{font-size:13px;color:#60465a}
+.plot-card figcaption,.plot-card figcaption>span:first-child{font-size:13px;color:#60465a}
+.output-footer p,.output-footer button,.output-footer button span{font-size:12px;color:#6a5061}
+.margin-note p,.closing-note>p{font-size:14px!important;color:#604657}
+.margin-note h4{font-size:18px;color:#70445f}
+.under-the-hood,.under-the-hood p,.closing-note a{font-size:13px;color:#654d60}
+.document-status,.notebook-footer{font-size:12px;color:#70566a}
+.notebook-metric>span,.notebook-metric small,.more-figure>p,.more-figure .plot-legend,.more-caption,.more-page .evaluation-label{font-size:12px;color:#684f60}
+.more-figure h4,.more-figure>figcaption,.more-table caption{font-size:14px;color:#60405a}
+.more-table,.more-table th,.more-table td,.confusion-matrix div{font-size:12px;color:#60465a}
+.mini-concept figcaption{font-size:14px;color:#705166}
+@media(max-width:1150px) and (min-width:851px){.workbench{grid-template-columns:235px minmax(0,1fr)}.notebook-index .file-entry>div{font-size:11px}.notebook-index .file-entry>div small{font-size:12px}}
+@media(max-width:850px){.workbench{grid-template-columns:minmax(0,1fr)}.notebook-index .file-entry>div{font-size:12px}.notebook-index .file-entry{max-width:100%}}
+@media(max-width:540px){.eyebrow{font-size:10px}.lab-subtitle{font-size:16px}.notebook-index .file-entry>div{font-size:11px;overflow-wrap:anywhere}.file-tab{font-size:11px}.execution-status{font-size:10px}.run-all{font-size:12px}.toolbar-reset{font-size:18px}.markdown-cell>p:not(.cell-kicker){font-size:15px}.cell-kicker{font-size:10px}.cell-topline h3{font-size:13px}.cell-gutter{font-size:10px}.cell-state{font-size:10px}.parameter-row label,.parameter-row select{font-size:12px}.range-ends{font-size:10px}.source-details pre,.more-page .source-details pre{font-size:12px}.output-topline h3{font-size:16px}.notebook-metric>span,.notebook-metric small,.more-figure>p,.more-figure .plot-legend{font-size:11px}.document-status,.notebook-footer{font-size:11px}}
