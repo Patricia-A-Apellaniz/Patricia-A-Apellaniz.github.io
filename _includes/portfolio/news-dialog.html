@@ -1,0 +1,9 @@
+<dialog class="news-dialog" id="news-detail-{{ include.id }}" aria-labelledby="news-title-{{ include.id }}">
+<button class="news-close" type="button" aria-label="Close news">×</button>
+<time datetime="{{ include.item.date }}">{{ include.item.date | date: '%-d %B %Y' }}</time>
+<span class="news-category">{{ include.item.category | escape }}</span>
+<h2 id="news-title-{{ include.id }}">{{ include.item.title | escape }}</h2>
+<p>{{ include.item.description | escape }}</p>
+{% if include.item.photos.size > 0 %}<div class="news-gallery">{% for photo in include.item.photos %}<figure><a href="{{ photo.url | default: photo.src | relative_url }}" target="_blank" rel="noopener noreferrer"><img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy"></a>{% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}</figure>{% endfor %}</div>{% endif %}
+<div class="news-links" aria-label="Related links">{% for link in include.item.links %}<a class="news-publication" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} ↗</a>{% endfor %}</div>
+</dialog>

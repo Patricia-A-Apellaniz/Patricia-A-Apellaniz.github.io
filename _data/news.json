@@ -1,17 +1,113 @@
 [
   {
+    "date": "2026-09-25",
+    "category": "Outreach",
+    "title": "European Researchers’ Night",
+    "text": "Bringing AI and healthcare closer to the public at European Researchers’ Night, with GAPS-UPM.",
+    "description": "At European Researchers’ Night at ETSIT-UPM, GAPS ran the workshop “¿Puede una IA predecir tu salud?” (“Can AI predict your health?”). Through hands-on activities, participants explored how data can reveal patterns and support health predictions, while discussing the possibilities and limitations of AI in medicine.",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7512855055335616513",
+    "photos": [
+      {
+        "src": "/images/news/researchers-night/workshop-1.jpg",
+        "alt": "GAPS workshop at European Researchers’ Night at ETSIT-UPM, photograph 1",
+        "caption": "European Researchers’ Night · ETSIT-UPM · Photos: GAPS-UPM"
+      },
+      {
+        "src": "/images/news/researchers-night/workshop-2.jpg",
+        "alt": "GAPS workshop at European Researchers’ Night at ETSIT-UPM, photograph 2",
+        "caption": "European Researchers’ Night · ETSIT-UPM · Photos: GAPS-UPM"
+      },
+      {
+        "src": "/images/news/researchers-night/workshop-3.jpg",
+        "alt": "GAPS workshop at European Researchers’ Night at ETSIT-UPM, photograph 3",
+        "caption": "European Researchers’ Night · ETSIT-UPM · Photos: GAPS-UPM"
+      },
+      {
+        "src": "/images/news/researchers-night/workshop-4.jpg",
+        "alt": "GAPS workshop at European Researchers’ Night at ETSIT-UPM, photograph 4",
+        "caption": "European Researchers’ Night · ETSIT-UPM · Photos: GAPS-UPM"
+      },
+      {
+        "src": "/images/news/researchers-night/workshop-5.jpg",
+        "alt": "GAPS workshop at European Researchers’ Night at ETSIT-UPM, photograph 5",
+        "caption": "European Researchers’ Night · ETSIT-UPM · Photos: GAPS-UPM"
+      }
+    ],
+    "links": [
+      {
+        "label": "View the post on LinkedIn",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7512855055335616513"
+      }
+    ]
+  },
+  {
     "date": "2026-08-03",
     "text": "Our study on oxygenscan parameters in sickle cell disease is out in <em>Scientific Reports</em>.",
-    "url": "https://doi.org/10.1038/s41598-026-62787-7"
+    "url": "https://doi.org/10.1038/s41598-026-62787-7",
+    "title": "Oxygenscan parameters in sickle cell disease",
+    "description": "Published in Scientific Reports, our study examines new oxygenscan parameters to better characterize red blood cell behavior across sickle cell disease genotypes.",
+    "photos": [
+      {
+        "src": "/images/news/oxygenscan-paper.jpg",
+        "alt": "Article page for Oxygenscan parameters in sickle cell disease",
+        "caption": "Scientific Reports · Springer Nature",
+        "url": "https://doi.org/10.1038/s41598-026-62787-7"
+      }
+    ],
+    "category": "Publication",
+    "links": [
+      {
+        "label": "Read the paper",
+        "url": "https://doi.org/10.1038/s41598-026-62787-7"
+      }
+    ]
   },
   {
     "date": "2026-06-18",
     "text": "SAMVAE, our work on multimodal survival analysis, is published in <em>Scientific Reports</em>.",
-    "url": "https://doi.org/10.1038/s41598-026-57704-x"
+    "url": "https://doi.org/10.1038/s41598-026-57704-x",
+    "title": "SAMVAE: multimodal survival analysis",
+    "description": "SAMVAE brings clinical, molecular and histopathological data together in a probabilistic framework for survival analysis, including competing risks. Our work is now published in Scientific Reports.",
+    "photos": [
+      {
+        "src": "/images/news/samvae-paper.jpg",
+        "alt": "Article page for SAMVAE: multimodal survival analysis",
+        "caption": "Scientific Reports · Springer Nature",
+        "url": "https://doi.org/10.1038/s41598-026-57704-x"
+      }
+    ],
+    "category": "Publication",
+    "links": [
+      {
+        "label": "Read the paper",
+        "url": "https://doi.org/10.1038/s41598-026-57704-x"
+      },
+      {
+        "label": "Code on GitHub",
+        "url": "https://github.com/AlbaGarridoLopezz/SAMVAE"
+      }
+    ]
   },
   {
-    "date": "2026-05-01",
+    "date": "2026-05-10",
     "text": "Our paper on interpretable machine learning for battery diagnostics is out in <em>Battery Energy</em>.",
-    "url": "https://doi.org/10.1002/bte2.70122"
+    "url": "https://doi.org/10.1002/bte2.70122",
+    "title": "Interpretable machine learning for battery diagnostics",
+    "description": "Our Battery Energy paper combines machine learning with in situ impedance spectra for interpretable diagnostics of solid-state batteries.",
+    "photos": [
+      {
+        "src": "/images/news/battery-paper.jpg",
+        "alt": "Article page for Interpretable machine learning for battery diagnostics",
+        "caption": "Battery Energy · Wiley",
+        "url": "https://doi.org/10.1002/bte2.70122"
+      }
+    ],
+    "category": "Publication",
+    "links": [
+      {
+        "label": "Read the paper",
+        "url": "https://doi.org/10.1002/bte2.70122"
+      }
+    ]
   }
 ]
