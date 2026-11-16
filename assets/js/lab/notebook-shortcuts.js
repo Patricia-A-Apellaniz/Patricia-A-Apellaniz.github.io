@@ -47,7 +47,7 @@
     $('environment-arrow').textContent=d.environment==='same'?'→ same rule':d.environment==='random'?'→ random':'⇄ reversed';
     $('output-warning').hidden=!td&&!ed;$('output-warning').textContent=td?'Training settings changed. Run cell 01, then cell 02 — or Run all. Existing scores still refer to the last executed settings.':!evaluated?'Model trained. Run cell 02 to evaluate on held-out examples.':'Environment changed. Run cell 02 to update the results.';
     $('seed-status').textContent='executed seed: '+(trained?.config.seed??'—');$('shift-environment').disabled=td;
-    $('shift-environment').textContent=evaluated?.environment==='reversed'?'↔ Restore the familiar rule':'↔ Swap the backgrounds';
+    $('shift-environment').innerHTML="<svg class=\"symbol-svg symbol-swap\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 8h18m-5-5 5 5-5 5M21 16H3m5-5-5 5 5 5\"/></svg> "+(evaluated?.environment==='reversed'?'Restore the familiar rule':'Swap the backgrounds');
     $('model-description').textContent=trained?`model inputs: shape_score${trained.config.useBackground?' + background_code':''}`:'';
     const labels={same:'Same relationship',random:'Random backgrounds',reversed:'Reversed relationship'};
     $('test-label').textContent=evaluated?labels[evaluated.environment]:'Test environment';
