@@ -5,5 +5,5 @@
 <h2 id="news-title-{{ include.id }}">{{ include.item.title | escape }}</h2>
 <p>{{ include.item.description | escape }}</p>
 {% if include.item.photos.size > 0 %}<div class="news-gallery">{% for photo in include.item.photos %}<figure><a href="{{ photo.url | default: photo.src | relative_url }}" target="_blank" rel="noopener noreferrer"><img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy"></a>{% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}</figure>{% endfor %}</div>{% endif %}
-<div class="news-links" aria-label="Related links">{% for link in include.item.links %}<a class="news-publication" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} ↗</a>{% endfor %}</div>
+<div class="news-links" aria-label="Related links">{% for link in include.item.links %}<a class="news-publication" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} <svg class="symbol-svg symbol-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a>{% endfor %}</div>
 </dialog>
